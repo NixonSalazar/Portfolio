@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Portafolio_Web</title>
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenidos">
+            <header>
+                <div class="contenido-header">
+                    <h1>N<span>S</span></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado"onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mi</a></li>
+                            <!-- <li><a href="#servicio">Servicios</a></li> -->
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>   
+                        </ul>
+                    </nav>
+
+                    <!--ICONOS DEL MENU RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--ICONOS DE RLA REDES SOCIALES-->
+                    <DIV class="REDES">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </DIV>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nixon Heemias</span>, Técnico en Programación.</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea inventore sapiente
+                ad distinctio sit tempora molestias quaerat, architecto dolorem similique possimus dolorum dolores necessitatibus
+                velit nulla! Voluptas, ad iusto?</p>
+            <!--     <a href="#portafolio">Ir a Portafolio</a> -->
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./RECURSOS/IMG_20220805_132344_712.webp" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Nixon Heemias</span></h2>
+            <h3>Programador Junior</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Commodi velit eaque amet voluptatibus ipsum enim? Illum
+             quia quae dicta distinctio earum esse numquam? Libero.</p>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. possimus autem saepe accusamus. Odit recusandae
+             corrupti, iusto vitae, molestiae cumque at, ad ab dicta esse rem placeat tempora.</p>
+            <!--  <a href="#">Descargar CV</a> -->
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+
+    <!-- <section id="servicio">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsum deleniti impedit debitis. Perferendis porro quam omnis
+                quidem ut et nihil similique soluta quibusdam corporis non provident.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsum deleniti impedit debitis. Perferendis porro quam omnis
+                quidem ut et nihil similique soluta quibusdam corporis non provident.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>seo</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsum deleniti impedit debitis. Perferendis porro quam omnis
+                quidem ut et nihil similique soluta quibusdam corporis non provident.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!--SECCION HABILIDADES-->
+    <!-- <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">5%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">5%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">5%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">5%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1659749930989.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1661055399762.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1661293709974.jpg" alt="">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1663706543365.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1664381777066.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./RECURSOS/FB_IMG_1665148852309.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text"placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10"placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER-->
+
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+        <DIV class="REDES">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </DIV>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
